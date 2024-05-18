@@ -2,7 +2,7 @@
 <html lang="en">
 
   <!-- Head -->
-  <head><meta http-equiv="refresh" content="3; url=https://vivianbrandenburg.github.io/" />        
+  <head>        
     <!-- Metadata, OpenGraph and Schema.org -->
     
 
@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Vivian  Brandenburg | Page not found</title>
+    <title>Vivian  Brandenburg | Inverse folding based pre-training</title>
     <meta name="author" content="Vivian  Brandenburg" />
-    <meta name="description" content="Looks like there has been a mistake. Nothing exists here." />
+    <meta name="description" content="Adding to the toolbox for deep leanring of RNA structures" />
 
 
     <!-- Bootstrap & MDB -->
@@ -30,7 +30,7 @@
     <!-- Styles -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧬</text></svg>">
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://vivianbrandenburg.github.io/404.html">
+    <link rel="canonical" href="https://vivianbrandenburg.github.io/projects/TermNN/">
 
     <!-- Dark Mode -->
     <script src="/assets/js/theme.js"></script>
@@ -101,12 +101,115 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Page not found</h1>
-            <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+            <h1 class="post-title">Inverse folding based pre-training</h1>
+            <p class="post-description">Adding to the toolbox for deep leanring of RNA structures</p>
           </header>
 
           <article>
-            <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://vivianbrandenburg.github.io/">here</a>.</p>
+            <p>TermNN is a tool to identify intrinsic transcription terminators in bacterial genomes. It uses a pre-training approach to implement the thermodynamic model for RNA folding into a Deep Learning framework, through which sequence and structure motif of intrinsic terminators are introduced. This proved as beneficial for the performance of the tool.<br>
+The work was <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010240" target="_blank" rel="noopener noreferrer">published in PLOS Comp. Biol.</a>, which was alkso reported <a href="https://news.rub.de/english/press-releases/2022-07-08-bioinformatics-artificial-intelligence-folds-rna-molecules" target="_blank" rel="noopener noreferrer">in press</a>. Data and code for this project are available on <a href="https://github.com/VivianBrandenburg/termNN.git" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+
+<p> </p>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/terminator_structure-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/terminator_structure-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/terminator_structure-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/terminator_structure.png" title="terminator structure">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/termNN_icon_2-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/termNN_icon_2-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/termNN_icon_2-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/termNN_icon_2.png" title="termination in bacteria">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Left: Intrinsic terminator. Right: Transcription Termination in bacteria.
+</div>
+
+<p>Intrinsic transcription terminators are RNA structures, which form at the 3’-end of nascent RNAs. They consist of a GC-rich stem structure, framed with an A-rich region (A-tail) and a U-rich sequence motif (U-tail). At the end of a transcribed RNA, the terminator forms a stable hairpin, which causes the RNA Polymerase to pause. At this time, the U-tail of the RNA weakly binds to the DNA, allowing the RNA to escape, which terminates the transcription.</p>
+
+<p> </p>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/topology-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/topology-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/topology-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/topology.png" title="network topology">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Network Topology of TermNN.
+</div>
+
+<p>TermNN provides Deep Learning models for the detection of intrinsic transcription terminators, based on Convolutional Neural Networks (CNNs). To enforce the learning of RNA structures, TermNN uses an inverse-folding based pre-training approach. The pre-training data feature the same structure as the terminators but have a different sequence. Additionally, two input formats are tested: The one-hot encoding reflects the RNA sequence of the input in a straight-forward maexample imagenner. The matrix encoding also reflects possible base pairings in the sequence.</p>
+
+<p> </p>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/impact_basepairs-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/impact_basepairs-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/impact_basepairs-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/impact_basepairs.png" title="impact of basepairs">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/genomescan-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/genomescan-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/genomescan-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/genomescan.png" title="example image">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Left: Impact of base pairs in terminator stems on TermNN. Right: Positive Predictive Value (PPV) for terminator detection with TermNN in the genome of <i>E. coli</i>. 
+</div>
+
+<p>To investigate the impact of the RNA structure of transcription terminators, a growing number of mutations is inserted into the stem. Both, the input format as well as the inverse pre-training, affect the impact of the stem stability. The pre-trained matrix encoding CNN is most affected by the stem stability. In a genome-wide search for intrinsic terminators in <em>E. coli</em>, the pre-trained matrix encoding CNN outperformed all other models. This shows that the integration of RNA structure is beneficial for detecting terminators, and that this integration can be accomplished with the inverse-folding based pre-training approach.</p>
 
           </article>
 

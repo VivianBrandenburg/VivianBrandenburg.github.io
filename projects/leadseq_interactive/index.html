@@ -2,7 +2,7 @@
 <html lang="en">
 
   <!-- Head -->
-  <head><meta http-equiv="refresh" content="3; url=https://vivianbrandenburg.github.io/" />        
+  <head>        
     <!-- Metadata, OpenGraph and Schema.org -->
     
 
@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Vivian  Brandenburg | Page not found</title>
+    <title>Vivian  Brandenburg | Lead-Seq interactive</title>
     <meta name="author" content="Vivian  Brandenburg" />
-    <meta name="description" content="Looks like there has been a mistake. Nothing exists here." />
+    <meta name="description" content="Explore the Lead-Seq data set" />
 
 
     <!-- Bootstrap & MDB -->
@@ -30,7 +30,7 @@
     <!-- Styles -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧬</text></svg>">
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://vivianbrandenburg.github.io/404.html">
+    <link rel="canonical" href="https://vivianbrandenburg.github.io/projects/leadseq_interactive/">
 
     <!-- Dark Mode -->
     <script src="/assets/js/theme.js"></script>
@@ -101,12 +101,65 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Page not found</h1>
-            <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+            <h1 class="post-title">Lead-Seq interactive</h1>
+            <p class="post-description">Explore the Lead-Seq data set</p>
           </header>
 
           <article>
-            <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://vivianbrandenburg.github.io/">here</a>.</p>
+            <p>These plots illustrate data from Lead-Seq RNA structure probing on <em>Yersinia pseudotuberculosis</em> at 25°C and 37°C, published by <a href="https://doi.org/10.1093/nar/gkaa404" target="_blank" rel="noopener noreferrer">Twittenhoff, Brandenburg and Righetti et al., 2020</a>. To learn more about Lead-Seq and the data set, visit my <a href="/projects/leadseq/">Lead-Seq project page</a>.</p>
+
+<p><br></p>
+
+<center>
+<span id="observablehq-textfield-93525b8f"></span><span id="observablehq-button_update-93525b8f"></span>
+
+<div style="font-size:10pt; margin-top:10px" id="observablehq-feedbacktext_search-93525b8f"></div>
+
+
+<div style="font-size:10pt; margin-left:100px" id="observablehq-viewof-panels-93525b8f"></div> 
+
+<div id="observablehq-plot-93525b8f"></div>
+</center>
+
+<p><span style="float: right" id="observablehq-download_button-93525b8f"> </span></p>
+
+<p><br></p>
+
+<p><strong>Annotated Features:</strong></p>
+
+<div style="font-size:9pt" id="observablehq-info_text-93525b8f"></div>
+
+<p><br></p>
+
+<p><br></p>
+
+<h2 id="identification-of-rna-thermometers">Identification of RNA-Thermometers</h2>
+
+<p>This plot shows the Δscores and p-adjust values around the Shine-Dalgarno-Sequence (SDS). Transcripts with a negative Δscore and a low p-adjust are considered good RNA-thermometer (RNAT) candidates. RNATs confirmed by <a href="https://doi.org/10.1093/nar/gkaa404" target="_blank" rel="noopener noreferrer">[1]: Twittenhoff, Brandenburg and Righetti et al., 2020</a> are marked in orange, RNATs confirmed by <a href="https://doi.org/10.1073/pnas.1523004113" target="_blank" rel="noopener noreferrer">[2]: Righetti et al., 2016</a> are marked in yellow.</p>
+
+<center>
+<div style="margin-top:30px" id="observablehq-SDS_plot-93525b8f"></div>
+
+</center>
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/d/5b50224d2147c93d.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "plot") return new Inspector(document.querySelector("#observablehq-plot-93525b8f"));
+  if (name === "button_update") return new Inspector(document.querySelector("#observablehq-button_update-93525b8f"));
+  if (name === "textfield") return new Inspector(document.querySelector("#observablehq-textfield-93525b8f"));
+  if (name === "viewof panels") return new Inspector(document.querySelector("#observablehq-viewof-panels-93525b8f"));
+  if (name === "feedbacktext_search") return new Inspector(document.querySelector("#observablehq-feedbacktext_search-93525b8f"));
+  if (name === "download_button") return new Inspector(document.querySelector("#observablehq-download_button-93525b8f"));
+  if (name === "info_text") return new Inspector(document.querySelector("#observablehq-info_text-93525b8f"));
+  if (name === "SDS_plot") return new Inspector(document.querySelector("#observablehq-SDS_plot-93525b8f"));
+});
+
+document.getElementById("observablehq-textfield-93525b8f").style.display = "inline-block";
+
+</script>
+
 
           </article>
 

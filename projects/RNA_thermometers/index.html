@@ -2,7 +2,7 @@
 <html lang="en">
 
   <!-- Head -->
-  <head><meta http-equiv="refresh" content="3; url=https://vivianbrandenburg.github.io/" />        
+  <head>        
     <!-- Metadata, OpenGraph and Schema.org -->
     
 
@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Vivian  Brandenburg | Page not found</title>
+    <title>Vivian  Brandenburg | RNA thermometers</title>
     <meta name="author" content="Vivian  Brandenburg" />
-    <meta name="description" content="Looks like there has been a mistake. Nothing exists here." />
+    <meta name="description" content="Detection of thermo-sensing RNA structures with Lead-Seq" />
 
 
     <!-- Bootstrap & MDB -->
@@ -30,7 +30,7 @@
     <!-- Styles -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧬</text></svg>">
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://vivianbrandenburg.github.io/404.html">
+    <link rel="canonical" href="https://vivianbrandenburg.github.io/projects/RNA_thermometers/">
 
     <!-- Dark Mode -->
     <script src="/assets/js/theme.js"></script>
@@ -101,12 +101,95 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Page not found</h1>
-            <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+            <h1 class="post-title">RNA thermometers</h1>
+            <p class="post-description">Detection of thermo-sensing RNA structures with Lead-Seq</p>
           </header>
 
           <article>
-            <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://vivianbrandenburg.github.io/">here</a>.</p>
+            <p>RNA thermometers are temperature sensing structures, typically located at the 5’-end of RNAs. They impede translation at low temperatures by forming a stable secondary structure and blocking the ribosome binding site and the start codon. At high temperatures, they melt open, reveal the ribosome binding site, and the translation can take place.</p>
+
+<p>RNA thermometers can be identified with <a href="/projects/leadseq/">Lead-Seq</a>, as shown in <a href="https://doi.org/10.1093/nar/gkaa404" target="_blank" rel="noopener noreferrer">Twittenhoff, Brandenburg and Righetti et al., 2020</a>. Code and Data for the RNA thermometer identification with Lead-Seq are available in <a href="https://github.com/VivianBrandenburg/LeadSeq" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+
+<p> </p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/thermometer_icon_padded-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/thermometer_icon_padded-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/thermometer_icon_padded-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/thermometer_icon_padded.png" title="example image">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/thermometer_method_gross-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/thermometer_method_gross-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/thermometer_method_gross-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/thermometer_method_gross.png" title="example image">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Left: RNA thermometer have different conformations at different temperatures. Right: Identification of RNA thermometers with Lead-Seq.  
+</div>
+
+<p>To identify RNA thermometers from Lead-Seq data, Δscores are calculated from the distance between Lead-Scores at different temperatures. The Δscores around the ribosome binding site are compared to the Δscores of the whole transcript via Mann-Whitney-U test.</p>
+
+<!-- wiki link to mwu? -->
+
+<p> </p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/MWU3-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/MWU3-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/MWU3-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/MWU3.png" title="example image">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/rnat_experimental_validation-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/rnat_experimental_validation-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/rnat_experimental_validation-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/rnat_experimental_validation.png" title="example image">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption"> Left: Comparison of Δlead-scores and Mann-Whitney-U test for ribosome binding sites in <i>Yersinia pseudotuberculosis</i> as identified with Lead-Seq, including novel RNA thermometers (pink). Right: Experimental validation of the novel RNA themometers. 
+</div>
+
+<p>The Δscores and p-values from the Mann-Whitney-U tests around ribosome binding sites in <em>Yersinia pseudotuberculosis</em> are compared. About 80 transcripts have a negative Δscore and a significant p-value (green), indicating significant melting at higher temperatures. These 80 transcripts are good candidates for RNA thermometers. Of these, 3 are verified RNA thermometers from <a href="https://doi.org/10.1073/pnas.1523004113" target="_blank" rel="noopener noreferrer">Righetti et al., 2016</a> (purple), and 2 are previously unknown RNA thermometers, verified in <a href="https://doi.org/10.1093/nar/gkaa404" target="_blank" rel="noopener noreferrer">Twittenhoff, Brandenburg and Righetti et al., 2020</a> (pink).</p>
 
           </article>
 

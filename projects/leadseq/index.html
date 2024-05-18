@@ -2,7 +2,7 @@
 <html lang="en">
 
   <!-- Head -->
-  <head><meta http-equiv="refresh" content="3; url=https://vivianbrandenburg.github.io/" />        
+  <head>        
     <!-- Metadata, OpenGraph and Schema.org -->
     
 
@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Vivian  Brandenburg | Page not found</title>
+    <title>Vivian  Brandenburg | Lead-Seq</title>
     <meta name="author" content="Vivian  Brandenburg" />
-    <meta name="description" content="Looks like there has been a mistake. Nothing exists here." />
+    <meta name="description" content="Transcriptome-wide RNA structure probing" />
 
 
     <!-- Bootstrap & MDB -->
@@ -30,7 +30,7 @@
     <!-- Styles -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧬</text></svg>">
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://vivianbrandenburg.github.io/404.html">
+    <link rel="canonical" href="https://vivianbrandenburg.github.io/projects/leadseq/">
 
     <!-- Dark Mode -->
     <script src="/assets/js/theme.js"></script>
@@ -101,12 +101,92 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Page not found</h1>
-            <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+            <h1 class="post-title">Lead-Seq</h1>
+            <p class="post-description">Transcriptome-wide RNA structure probing</p>
           </header>
 
           <article>
-            <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://vivianbrandenburg.github.io/">here</a>.</p>
+            <p>Lead-seq is a structure probing method for bacteria, which combines chemical structure probing with high-throughput sequencing. It allows for the probing of RNA structures of entire transcriptomes at different conditions. The method was first published by <a href="https://doi.org/10.1093/nar/gkaa404" target="_blank" rel="noopener noreferrer">Twittenhoff, Brandenburg and Righetti et al.</a> in 2020, which was also reported in <a href="https://www.sciencedaily.com/releases/2020/06/200617145959.htm" target="_blank" rel="noopener noreferrer">ScienceDaily</a>. Code and Data for Lead-Seq are available in <a href="https://github.com/VivianBrandenburg/LeadSeq" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+
+<p> </p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/lead_schematisch_breit-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/lead_schematisch_breit-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/lead_schematisch_breit-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/lead_schematisch_breit.png" title="example image">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Workflow of Lead-Seq. 
+</div>
+
+<p>For Lead-Seq, a bacterial culture is treated with lead(II)-acetate. Lead(II) ions induce strand breaks in unpaired RNA regions. A second culture serves as negative control. Reverse Transcripase is added to both cultures, which creates a DNA copy of each RNA. In the lead-treated sample, the transcription stops when a lead-induced strand break is reached, whereas the transcription continues over this position in the control sample. Both samples are sequenced and mapped to the reference genome. The strand breaks are counted, and the normalized counts from both samples are used to calculate Lead-Scores. The Lead-Scores indicate single-stranded RNA regions.</p>
+
+<p> </p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/l25_distribution-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/l25_distribution-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/l25_distribution-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/l25_distribution.png" title="example image">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/l37_distribution-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/l37_distribution-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/l37_distribution-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/l37_distribution.png" title="example image">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/performance_at_cut_05-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/performance_at_cut_05-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/performance_at_cut_05-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/performance_at_cut_05.png" title="example image">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Lead-Scores of tRNAs at 25 °C (left) and 37 °C (middle). Selectivity and sensitivity for the same tRNAs (right).
+</div>
+
+<p>Lead-Seq was tested on the γ-proteobacterium <em>Yersinia pseudotuberculosis</em> at 25 °C and 37 °C and validated with tRNA structures. At both temperatures, the Lead-Scores are significantly higher at unpaired than at paired regions. The selectivity above 0.7 shows that Lead-Scores indicate unpaired nucleotides at different testing conditions.</p>
 
           </article>
 
